@@ -1,0 +1,20 @@
+server:
+  servlet:
+    context-path: /j25
+  port: 8080
+
+spring:
+  application:
+    name: j25
+  mvc:
+    servlet:
+      path: /api/v1
+  datasource:
+    url: jdbc:sqlserver://LsnrSartQa:1433;databaseName=IncTransporte;encrypt=false;
+    username: adinctrp_qa
+    password: Mexico.1
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
